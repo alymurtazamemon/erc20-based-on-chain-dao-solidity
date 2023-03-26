@@ -8,10 +8,10 @@ import "@openzeppelin/contracts/token/ERC20/extensions/ERC20Votes.sol";
 /**
  * * This token is designed to grant voting power to accounts, and it extends the ERC20Votes standard in order to facilitate the taking of snapshots. This feature is crucial, as it provides protection against double voting. It should be noted that this token is not a standard ERC20 token, as it includes additional functionality beyond the ERC20 standard.
  */
-contract GovernanceToekn is ERC20, ERC20Permit, ERC20Votes {
+contract GovernanceToken is ERC20, ERC20Permit, ERC20Votes {
     constructor()
-        ERC20("GovernanceToekn", "GT")
-        ERC20Permit("GovernanceToekn")
+        ERC20("GovernanceToken", "GT")
+        ERC20Permit("GovernanceToken")
     {}
 
     // The functions below are overrides required by Solidity.
