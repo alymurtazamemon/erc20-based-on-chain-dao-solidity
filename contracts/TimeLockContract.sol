@@ -13,7 +13,7 @@ import "@openzeppelin/contracts/governance/TimelockController.sol";
  * Lastly, there is the Admin role, which can grant and revoke the two previous roles: this is a very sensitive role that will be granted automatically to the timelock itself, and optionally to a second account, which can be used for ease of setup but should promptly renounce the role.
  */
 
-contract TimeLock is TimelockController {
+contract TimeLockContract is TimelockController {
     constructor(
         uint256 minDelay,
         address[] memory proposers,
