@@ -18,7 +18,7 @@ async function castAVote(proposalIndex: number) {
     // * 0 = Against, 1 = For, 2 = Abstain for this example
     const voteWay = 1;
     const reason =
-        "I want to give vote in favor because I have proposal this! yaaaa It is centralized!!!";
+        "I want to give vote in favor because I have proposed this! yaaaa It is centralized!!!";
 
     await vote(proposalId, voteWay, reason);
 }
