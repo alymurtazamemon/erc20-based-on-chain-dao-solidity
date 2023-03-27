@@ -18,6 +18,7 @@ async function createAProposal(
     const governor = await ethers.getContract("GovernorContract");
     const box = await ethers.getContract("Box");
 
+    // * This is contract function you want to call using a governot.
     const encodedFunctionCall = box.interface.encodeFunctionData(
         functionToCall,
         args
